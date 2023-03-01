@@ -119,7 +119,7 @@ const LoggedinHome = () => {
             >
                 <Modal.Header closeButton>
                     <Modal.Title>
-                        Update Recipe
+                        Update Recipeeee
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
@@ -177,7 +177,7 @@ const LoggedinHome = () => {
 const LoggedOutHome = () => {
     return (
         <div className="home container">
-            <h1 className="heading">Welcome to the Recipes</h1>
+            <h1 className="heading">Welcome to the updated Recipes</h1>
             <Link to='/signup' className="btn btn-primary btn-lg">Get Started</Link>
         </div>
     )
