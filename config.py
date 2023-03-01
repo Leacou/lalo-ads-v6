@@ -23,7 +23,7 @@ class DevConfig(Config):
 
 class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URI", "sqlite:///prod.db")
-    DEBUG = os.getenv("DEBUG", False)
+    DEBUG = os.getenv("DEBUG", cast=bool)
     SQLALCHEMY_ECHO = os.getenv("ECHO", False)
     SQLALCHEMY_TRACK_MODIFICATIONS = os.getenv("SQLALCHEMY_TRACK_MODIFICATIONS", False)
 
